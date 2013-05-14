@@ -36,6 +36,6 @@ Files
 * `sql/tables.sql`
 Creative close table structure.
 
-* `sql`/sample_data.sql
+* `sql/sample_data.sql`
 Some insert statements for testing
 
