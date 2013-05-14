@@ -35,20 +35,34 @@ Store Procedures
 
 It's very clear of means just like the name of the procedures.
 
-* `p_prefix_nodes_add_new_paths_after_insert`
-* `_prefix_nodes_get_subtree_by_node_id`
-* `p_prefix_nodes_move_old_paths_after_update`
-* `p_prefix_nodes_delete_nodes` Hidden or show nodes from subtree, explains as following:
+* `p_prefix_nodes_add_new_paths_after_insert(param_node_new_id INT UNSIGNED,param_node_parent_id INT UNSIGNED)`
 
-  First `call p_prefix_nodes_get_subtree_by_node_id(6)` get a HARDWARE subtree,Second `call p_prefix_nodes_delete_nodes_after_update(6, 0)` to hidden subtree,Third `call p_prefix_nodes_get_subtree_by_node_id(6)` again get HARDWARE subtree, but this time the HARDWARE subtree is dispear
-Fourth `call p_prefix_nodes_delete_nodes_after_update(6, 1)` show HARDWARE subtree
+  Add new paths when insert a node to `prefix_nodes` table
+  
+* `p_prefix_nodes_get_subtree_by_node_id(node_id INT UNSIGNED)`
+
+  Get subtree by a node id
+  
+* `p_prefix_nodes_move_old_paths_after_update(node_old_parent_id INT UNSIGNED,node_new_parent_id INT UNSIGNED)`
+
+  Update paths when move a node to a new parent node
+  
+* `p_prefix_nodes_delete_nodes(node_id INT UNSIGNED, is_deleted INT UNSIGNED)`
+
+  Hidden or show nodes from subtree, explains as following:
+
+  First `call p_prefix_nodes_get_subtree_by_node_id(6)` get a HARDWARE subtree,Second `call p_prefix_nodes_delete_nodes(6, 0)` to hidden subtree,Third `call p_prefix_nodes_get_subtree_by_node_id(6)` again get HARDWARE subtree, but this time the HARDWARE subtree was disappeared
+Fourth `call p_prefix_nodes_delete_nodes(6, 1)` show HARDWARE subtree
 
 Files
 -----
 
 * `sql/tables.sql`
-Create tables.
+
+  Create tables.
 
 * `sql/sample_data.sql`
-Some insert statements for testing
+
+  Some insert statements for testing
+  
 
