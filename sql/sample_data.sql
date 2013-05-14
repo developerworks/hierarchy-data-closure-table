@@ -1,0 +1,17 @@
+INSERT INTO `prefix_nodes` VALUES(1, NULL, NULL, 'HOME',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(2, 1, 1, 'PRODUCT',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(3, 1, 2, 'CONTACT',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(4, 1, 3, 'DOCUMENTATION',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(5, 2, 2, 'SOFTWARE',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(6, 2, 1, 'HARDWARE',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(7, 1, 3, 'DEMO',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(8, 4, 1, 'JAVA',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(9, 4, 2, 'PHP',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(10, NULL, NULL, 'Asia',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(11, 10, 1, 'China',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(12, 10, 2, 'Korea',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(13, 10, 3, 'Japan',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(14, 6, 3, 'CPU',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(15, 6, 4, 'HARD DISK',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(16, 15, 1, 'SSD',DEFAULT);
+INSERT INTO `prefix_nodes` VALUES(17, 15, 2, 'HDD',DEFAULT);
