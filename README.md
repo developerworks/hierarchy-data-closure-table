@@ -38,6 +38,10 @@ It's very clear of means just like the name of the procedures.
 * `p_prefix_nodes_add_new_paths_after_insert`
 * `_prefix_nodes_get_subtree_by_node_id`
 * `p_prefix_nodes_move_old_paths_after_update`
+* `p_prefix_nodes_delete_nodes` Hidden or show nodes from subtree, explains as following:
+
+  First `call p_prefix_nodes_get_subtree_by_node_id(6)` get a HARDWARE subtree,Second `call p_prefix_nodes_delete_nodes_after_update(6, 0)` to hidden subtree,Third `call p_prefix_nodes_get_subtree_by_node_id(6)` again get HARDWARE subtree, but this time the HARDWARE subtree is dispear
+Fourth `call p_prefix_nodes_delete_nodes_after_update(6, 1)` show HARDWARE subtree
 
 Files
 -----
