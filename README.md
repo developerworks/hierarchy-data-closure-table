@@ -34,7 +34,7 @@ Files
 -----
 
 * `sql/tables.sql`
-Creative close table structure.
+Create tables.
 
 * `sql/sample_data.sql`
 Some insert statements for testing
