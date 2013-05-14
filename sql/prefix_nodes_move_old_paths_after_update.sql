@@ -8,7 +8,13 @@ CREATE
     /*!50017 DEFINER = 'root'@'localhost' */
     TRIGGER `prefix_nodes_move_old_paths_after_update` AFTER UPDATE ON `prefix_nodes` 
     FOR EACH ROW BEGIN
-    CALL p_prefix_nodes_move_old_paths_after_update(OLD.`parent_id`, NEW.`parent_id`);
+    IF OLD.`parent_id` != NEW.`parent_id` THEN
+        CALL p_prefix_nodes_move_old_paths_after_update(OLD.`parent_id`, NEW.`parent_id`);
+    END IF;
+
+    IF OLD.`is_deleted` != NEW.`is_deleted` THEN
+        CALL p_prefix_nodes_delete_nodes_after_update(NEW.`parent_id`);
+    END IF;
 END;
 $$
 

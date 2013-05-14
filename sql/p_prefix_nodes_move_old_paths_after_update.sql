@@ -4,7 +4,7 @@ USE `_category`$$
 
 DROP PROCEDURE IF EXISTS `p_prefix_nodes_move_old_paths_after_update`$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `p_prefix_nodes_move_old_paths_after_update`(
+CREATE DEFINER = `root` @`localhost` PROCEDURE `p_prefix_nodes_move_old_paths_after_update` (
     `node_old_parent_id` INT UNSIGNED,
     `node_new_parent_id` INT UNSIGNED
 ) COMMENT 'Update paths when parent_id column changed'
@@ -15,8 +15,6 @@ BEGIN
     -- If parent_id has chanaged
     -- 1. Delete the paths between moved node and old ancestors
     -- 2. Add the paths between moved node and new ancestors
-    IF `node_old_parent_id` != `node_new_parent_id`
-    THEN
     DELETE
         a
     FROM
@@ -43,7 +41,6 @@ BEGIN
         JOIN `prefix_nodes_paths` AS subtree
     WHERE subtree.`ancestor_id` = `node_old_parent_id`
         AND supertree.`descendant_id` = `node_new_parent_id` ;
-    END IF ;
 END$$
 
 DELIMITER ;
