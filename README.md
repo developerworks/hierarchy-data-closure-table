@@ -3,6 +3,15 @@ Closure Table
 
 This is a mysql store procedure and trigger implementation of closure table in RDBMS about hierarchy data model.
 
+<h3>Closure Table Node Paths</h3>
+
+![Closure Table Node Paths](https://raw.github.com/developerworks/hierarchy-data-closure-table/master/assets/closure-table-paths.png "Closure Table Node Paths")
+
+<h3>Query the subtree nodes</h3>
+
+![Query the subtree nodes](https://raw.github.com/developerworks/hierarchy-data-closure-table/master/assets/call%20p_prefix_nodes_get_subtree_by_node_id.png "Query the subtree nodes")
+
+
 Features
 --------
 
