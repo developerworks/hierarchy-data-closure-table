@@ -29,3 +29,13 @@ It's very clear of means just like the name of the procedures.
 * `p_prefix_nodes_add_new_paths_after_insert`
 * `_prefix_nodes_get_subtree_by_node_id`
 * `p_prefix_nodes_move_old_paths_after_update`
+
+Files
+-----
+
+* `sql/tables.sql`
+Creative close table structure.
+
+* `sql`/sample_data.sql
+Some insert statements for testing
+
