@@ -13,7 +13,7 @@ CREATE
     END IF;
 
     IF OLD.`is_deleted` != NEW.`is_deleted` THEN
-        CALL p_prefix_nodes_delete_nodes_after_update(NEW.`parent_id`);
+        CALL p_prefix_nodes_delete_nodes_after_update(NEW.`parent_id`, NEW.`is_deleted`);
     END IF;
 END;
 $$
