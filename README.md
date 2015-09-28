@@ -51,8 +51,10 @@ It's very clear of means just like the name of the procedures.
 
   Hidden or show nodes from subtree, explains as following:
 
-  First `call p_prefix_nodes_get_subtree_by_node_id(6)` get a HARDWARE subtree,Second `call p_prefix_nodes_delete_nodes(6, 0)` to hidden subtree,Third `call p_prefix_nodes_get_subtree_by_node_id(6)` again get HARDWARE subtree, but this time the HARDWARE subtree was disappeared
-Fourth `call p_prefix_nodes_delete_nodes(6, 1)` show HARDWARE subtree
+  - First `call p_prefix_nodes_get_subtree_by_node_id(6)` get a HARDWARE subtree,
+  - Second `call p_prefix_nodes_delete_nodes(6, 0)` to hidden subtree,
+  - Third `call p_prefix_nodes_get_subtree_by_node_id(6)` again get HARDWARE subtree, but this time the HARDWARE subtree was disappeared
+  - Fourth `call p_prefix_nodes_delete_nodes(6, 1)` show HARDWARE subtree
 
 Files
 -----
