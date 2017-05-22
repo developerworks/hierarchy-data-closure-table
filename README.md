@@ -60,12 +60,16 @@ table only if `OLD.parent_id != NEW.parent_id`
   - Step 3. `call p_get_tree(6)` get the `HARDWARE` subtree, when you get a subtree, it is not show in the result.
   - Step 4. `call p_node_hide(6, 1)` show `HARDWARE` subtree
 
-## Files
+## MySQL Files
 
-* `./sql/tables.sql`
+* `./mysql/tables.sql`
 
   Create tables.
 
-* `./sql/sample_data.sql`
+* `./mysql/sample_data.sql`
 
   Some insert statements for testing
+
+## Postgresql Files
+
+TODO::
