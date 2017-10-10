@@ -1,3 +1,4 @@
+-- Hardware category
 
 INSERT INTO prefix_nodes("order", name, is_deleted, parent_id) VALUES(0, 'HOME', false, NULL);
 INSERT INTO prefix_nodes("order", name, is_deleted, parent_id) VALUES(0, 'PRODUCT', false, 1);
@@ -19,6 +20,7 @@ INSERT INTO prefix_nodes("order", name, is_deleted, parent_id) VALUES(0, 'SSD', 
 INSERT INTO prefix_nodes("order", name, is_deleted, parent_id) VALUES(0, 'HDD', false, 15);
 
 
+-- Goods category
 
 INSERT INTO prefix_nodes(id, "order", name, is_deleted, parent_id) VALUES('29f9d3a1-068f-4132-bf5e-4792add8489b', 0, 'Subtree Test', false, NULL);
 
@@ -26,12 +28,8 @@ INSERT INTO prefix_nodes("order", name, is_deleted, parent_id) VALUES(0, 'Child 
 INSERT INTO prefix_nodes("order", name, is_deleted, parent_id) VALUES(0, 'Child Node 2', false, '29f9d3a1-068f-4132-bf5e-4792add8489b');
 INSERT INTO prefix_nodes("order", name, is_deleted, parent_id) VALUES(0, 'Child Node 3', false, '29f9d3a1-068f-4132-bf5e-4792add8489b');
 
-
 INSERT INTO prefix_nodes("order", name, is_deleted, parent_id) VALUES(0, 'Child Node 3 - Child', false, '72850f82-7dab-45d9-8560-dc183abf3817');
-
-
 INSERT INTO prefix_nodes("order", name, is_deleted, parent_id) VALUES(0, 'Child Node 3 - Child', false, '5efc1e96-6931-4310-ac09-ad791f22d7e3');
-
 
 
 INSERT INTO prefix_nodes("order", name, is_deleted, parent_id) VALUES(0, '春季焕新', false, 'e632b593-8b1b-4966-8427-3273f2d43f4c');
